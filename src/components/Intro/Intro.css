@@ -1,0 +1,27 @@
+.intro {
+  display: flex;
+}
+
+.intro-picture {
+  margin: 0 2rem 4rem 2rem;
+  align-self: end;
+}
+
+.intro-picture img {
+  border-radius: 100%;
+  width: 100%;
+  display: block;
+  width: 12rem;
+}
+
+
+@media (orientation: portrait) and (max-width: 992px) {
+  .intro {
+    flex-direction: column-reverse;
+  }
+
+  .intro-picture {
+    margin: 2rem;
+    align-self: center;
+  }
+}
