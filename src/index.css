@@ -16,7 +16,9 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+
+  :root,
+  .light {
     --color-light-01: #ffffff;
     --color-light-02: lightgray;
     --color-dark-01: #333333;
@@ -38,7 +40,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+
+  :root,
+  .dark {
     --color-light-01: #ffffff;
     --color-light-02: #aaaaaa;
     --color-dark-01: #262626;
@@ -87,11 +91,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.125rem;
 }
 
 h4 {
@@ -115,6 +119,12 @@ strong {
   font-weight: normal;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 #root {
   border-top: 14px solid var(--highlight-color-01);
 }
@@ -132,7 +142,7 @@ strong {
 
   .App {
     grid-template-columns: auto;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .top,
@@ -166,5 +176,57 @@ strong {
   .right {
     grid-column-start: 2;
     grid-column-end: 5;
+  }
+}
+
+@media print {
+  #root {
+    padding: 2rem;
+    font-size: 12px;
+  }
+
+  .App {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 100%;
+  }
+
+  .top {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .right {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 1rem;
   }
 }

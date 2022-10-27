@@ -3,8 +3,9 @@
 }
 
 .intro-picture {
-  margin: 0 2rem 4rem 2rem;
+  margin: 0 2rem 0 2rem;
   align-self: end;
+  position: relative;
 }
 
 .intro-picture img {
@@ -23,5 +24,19 @@
   .intro-picture {
     margin: 2rem;
     align-self: center;
+  }
+}
+
+@media print {
+  .intro-name {
+    font-size: 1.25rem;
+  }
+
+  .intro-picture {
+    margin: 0 2rem 2rem 2rem;
+  }
+
+  .intro-picture img {
+    width: 8rem;
   }
 }

@@ -6,16 +6,26 @@ interface IExperience {
   title: string;
   company: string;
   description: string;
+  from: string;
+  to: string;
 }
 
-export const Experience: FC<IExperience> = ({ title, company, description }) => {
+export const Experience: FC<IExperience> = ({ title, company, description, from, to }) => {
   return (
     <div className='experience'>
-      <ExperienceDate from='2015' to='2022' />
       <div className='experience-content'>
-        <h3 className='experience-title'>{title}</h3>
-        <strong className='experience-company'>{company}</strong>
-        <p>{description}</p>
+        <ExperienceDate
+          from={from}
+          to={to} />
+        <h3 className='experience-title'>
+          {title}
+        </h3>
+        <strong className='experience-company'>
+          {company}
+        </strong>
+        <p className='experience-description'>
+          {description}
+        </p>
       </div>
     </div>
   );

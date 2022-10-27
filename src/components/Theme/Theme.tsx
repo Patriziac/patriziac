@@ -1,6 +1,5 @@
 
 import { FC } from 'react';
-import './Theme.css'
 
 interface ITheme {
   title: string;
@@ -14,10 +13,7 @@ export const Theme: FC<ITheme> = ({ title }) => {
   // });
 
   return (
-    <select>
-      <option value="">Dark</option>
-      <option value="">Light</option>
-    </select>
+    <button>{title}</button>
   );
 }
 
