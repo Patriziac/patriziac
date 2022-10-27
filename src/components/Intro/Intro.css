@@ -1,10 +1,15 @@
 .intro {
   display: flex;
+  margin-top: 2rem;
+  max-width: 60rem;
+}
+
+.intro-content {
+  padding-right: 2rem;
 }
 
 .intro-picture {
-  margin: 0 2rem 0 2rem;
-  align-self: end;
+  align-self: center;
   position: relative;
 }
 
@@ -12,7 +17,7 @@
   border-radius: 100%;
   width: 100%;
   display: block;
-  width: 12rem;
+  width: 14rem;
 }
 
 
@@ -21,13 +26,20 @@
     flex-direction: column-reverse;
   }
 
+  .intro-content {
+    margin-top: -2.5rem;
+    padding: 2rem 1rem;
+  }
+
   .intro-picture {
-    margin: 2rem;
+    margin: 1rem;
     align-self: center;
   }
 }
 
 @media print {
+
+
   .intro-name {
     font-size: 1.25rem;
   }

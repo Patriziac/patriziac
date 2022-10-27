@@ -2,6 +2,11 @@
   margin-bottom: 3rem;
 }
 
+.section.border {
+  padding: 1rem;
+  border: 1px solid var(--highlight-color-01);
+}
+
 .section:last-child {
   margin-bottom: 0;
 }

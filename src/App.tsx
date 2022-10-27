@@ -3,7 +3,6 @@ import './App.css'
 import { Section } from './components/Section/Section'
 import { ExperienceList } from './components/Experience/ExperienceList'
 import { Intro } from './components/Intro/Intro'
-import { Theme } from './components/Theme/Theme'
 
 function App() {
 
@@ -14,11 +13,12 @@ function App() {
         <Intro
           name='Consecte Tempor Nulla'
           position='Invidunt sadipscing'
-          about='Accusam hendrerit ea blandit sanctus magna diam nostrud qui enim et eum magna eos dolore veniam molestie zzril adipiscing no et invidunt invidunt labore eirmod stet mazim dolor stet stet tempor magna vulputate velit sadipscing diam voluptua clita diam sadipscing.' />
+          about='Accusam hendrerit ea blandit sanctus magna diam nostrud qui enim et eum magna eos dolore veniam molestie zzril adipiscing no et invidunt invidunt labore eirmod stet mazim dolor stet stet tempor magna vulputate velit sadipscing.' />
       </div>
 
       <div className='left'>
-        <Section title='Section title'>
+
+        <Section title='Skills'>
           <ul>
             <li>
               Nibh rebum nibh
@@ -34,27 +34,37 @@ function App() {
             </li>
           </ul>
         </Section>
-        <Section title='Section title'>
+
+        <Section title='Contact' border={true}>
           <ul>
             <li>
-              Nibh rebum nibh
+              mail@mail.com
             </li>
             <li>
-              Nibh rebum nibh
+              Address ###
             </li>
             <li>
-              Nibh rebum nibh
+              8110000000
             </li>
             <li>
-              Nibh rebum nibh
+              www.page.com
             </li>
           </ul>
         </Section>
+
+
+
       </div>
 
       <div className='right'>
-        <Section title='Section title'>
+        <Section title='Work Experience'>
           <ExperienceList />
+        </Section>
+      </div>
+
+      <div className='bottom'>
+        <Section title='Education'>
+          <p>Accusam hendrerit ea blandit sanctus magna diam nostrud qui enim et eum magna eos dolore veniam molestie zzril adipiscing no et invidunt invidunt labore eirmod stet mazim dolor stet stet tempor magna vulputate velit sadipscing diam voluptua clita diam sadipscing.</p>
         </Section>
       </div>
 

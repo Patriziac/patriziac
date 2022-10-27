@@ -10,6 +10,7 @@ interface IIntro {
 export const Intro: FC<IIntro> = ({ name, position, about }) => {
   return (
     <div className='intro'>
+
       <div className='intro-content'>
         <h1 className='intro-name'>
           {name}
@@ -21,9 +22,11 @@ export const Intro: FC<IIntro> = ({ name, position, about }) => {
           {about}
         </p>
       </div>
+
       <div className='intro-picture'>
         <img src="https://dummyimage.com/400x400/aaaaaa/ffffff.png" alt="" />
       </div>
+
     </div>
   );
 }
